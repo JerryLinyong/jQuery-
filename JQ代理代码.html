@@ -88,6 +88,8 @@
                 var others='<li><p class="name">珂兰 黄金手 猴哥款</p><p class="price">￥'+Math.ceil(Math.random()*4000)+'</p><a href="#" class="del hidden">删除</a></li>'
                 $('ul').append(others)
             }
+            $('li').removeClass('active')
+            $('.del').addClass('hidden')
         })
         $('.edit').on('click',function(){
                 $('li').each(function(){
